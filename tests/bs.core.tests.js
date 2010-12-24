@@ -1,8 +1,10 @@
 TestCase('bs.core', {
   'test should be defined': function () {
     assertObject(bs); 
-  },
+  }
+});
 
+TestCase('bs.sprite', {
   'test should create new sprite object': function () {
     var sprite = new bs.Sprite(5, 5, {});
     assertObject(sprite);
@@ -26,5 +28,16 @@ TestCase('bs.core', {
   'test should create a new rpc object': function () {
     var rpc = new bs.RPC(5, 5, {});
     assertObject(rpc);
-  }  
+  } 
+});
+
+TestCase('bs.game', {
+  'test should be defined': function () {
+    assertFunction(bs.Game);
+  },
+
+  'test should create a new game object': function () {
+    var game = new bs.Game();
+    assertObject(game);
+  }
 });
