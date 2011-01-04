@@ -1,0 +1,2 @@
+gin.Class('bs.Timer', {
+});

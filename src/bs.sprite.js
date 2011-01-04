@@ -76,5 +76,3 @@ gin.Class('bs.NPC', 'bs.Actor', {
 gin.Class('bs.RPC', 'bs.Actor', {
     
 });
-
-var test;
